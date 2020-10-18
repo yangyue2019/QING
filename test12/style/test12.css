@@ -1,0 +1,161 @@
+body {
+    font-family: "微软雅黑";
+    font-weight: bolder;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+th {
+    background: black;
+    color: white;
+    text-align: left;
+}
+
+.gray {
+    background: #cccccc;
+}
+
+.red {
+    color: #cc0000;
+}
+
+.div1 {
+    width: 60%;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.div1 input {
+    width: 50%;
+}
+
+.div1 input:focus {
+    width: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.pics {
+    position: absolute;
+    left: 0;
+    width: 900px;
+    height: 150px;
+    -webkit-animation: carousel ease 12s infinite;
+    animation: carousel ease 12s infinite;
+}
+
+@-webkit-keyframes carousel {
+    0% {
+        left: 0;
+    }
+    28% {
+        left: 0;
+    }
+    35% {
+        left: -300px;
+    }
+    63% {
+        left: -300px;
+    }
+    70% {
+        left: -600px;
+    }
+    98% {
+        left: -600px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+    28% {
+        left: 0;
+    }
+    35% {
+        left: -300px;
+    }
+    63% {
+        left: -300px;
+    }
+    70% {
+        left: -600px;
+    }
+    98% {
+        left: -600px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.pic {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+}
+
+#one {
+    background: #008100;
+    left: 0;
+}
+
+#two {
+    background: #cc0000;
+    left: 300px;
+}
+
+#three {
+    background: #0100fe;
+    left: 600px;
+}
+
+.tag {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: relative;
+    top: -30px;
+    left: 100px;
+    background-color: #000;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tag1:target {
+    left: 0;
+}
+
+.tag2:target {
+    left: 0;
+}
+
+.tag3:target {
+    left: 0;
+}
